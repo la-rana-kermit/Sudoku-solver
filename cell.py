@@ -7,32 +7,32 @@ class Cell(object):
     """
     candidates: list = []
 
-    def __init__(self, column: int, sub_column: int, row: int, sub_row: int, subgrid_column: int, subgrid_row: int, value: int):
+    def __init__(self, column_id: int, sub_column_id: int, row_id: int, sub_row_id: int, subgrid_column_id: int, subgrid_row_id: int, value: int):
         """
         Class constructor that represent single sudoku cell
 
-        :param column: Cell column identifier
-        :param sub_column: Cell column in subgrid identifier
-        :param row: Cell row identifier
-        :param sub_row: Cell row in subgrid identifier
-        :param subgrid_column: Cell subgrid column identifier
-        :param subgrid_row: Cell subgrid row identifier
+        :param column_id: Cell column identifier
+        :param sub_column_id: Cell column in subgrid identifier
+        :param row_id: Cell row identifier
+        :param sub_row_id: Cell row in subgrid identifier
+        :param subgrid_column_id: Cell subgrid column identifier
+        :param subgrid_row_id: Cell subgrid row identifier
         :param value: Cell value
 
-        :type column: int
-        :type sub_column: int
-        :type row: int
-        :type sub_row: int
-        :type subgrid_column: int
-        :type subgrid_row: int
+        :type column_id: int
+        :type sub_column_id: int
+        :type row_id: int
+        :type sub_row_id: int
+        :type subgrid_column_id: int
+        :type subgrid_row_id: int
         :type value: int
         """
-        self.column = column
-        self.sub_column = sub_column
-        self.row = row
-        self.sub_row = sub_row
-        self.subgrid_column = subgrid_column
-        self.subgrid_row = subgrid_row
+        self.column_id = column_id
+        self.sub_column_id = sub_column_id
+        self.row_id = row_id
+        self.sub_row_id = sub_row_id
+        self.subgrid_column_id = subgrid_column_id
+        self.subgrid_row_id = subgrid_row_id
         self.value = value
 
     def add_candidate(self, new_candidate: int):
