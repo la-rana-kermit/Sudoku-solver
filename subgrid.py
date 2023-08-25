@@ -3,9 +3,9 @@ class Subgrid(object):
     Class that represent single sudoku subgrid
     """
 
-    subgrid = None
+    subgrid: list = []
 
-    def __init__(self, subgrid_row_id, subgrid_column_id):
+    def __init__(self, subgrid_row_id: int, subgrid_column_id: int):
         """
         Class constructor that represent single sudoku subgrid
 

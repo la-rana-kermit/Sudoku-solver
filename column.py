@@ -15,11 +15,14 @@ class Column(object):
         """
         self.column_id = column_id
 
-    def exist_in_column(self, number: int):
+    def exist_in_column(self, number: int) -> bool:
         """
         Methods to check if a number exists in column value list
 
         :param number: Number to check
         :type number: int
+
+        :return: `True` if number is present, `False` if number is not present
+        :rtype: bool
         """
         return True if number in self.column else False
