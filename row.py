@@ -3,14 +3,14 @@ class Row(object):
     Class that represent single sudoku row
     """
 
-    row = None
+    row: list = []
 
-    def __init__(self, row):
+    def __init__(self, row_id: int):
         """
         Class constructor that represent single sudoku row
 
-        :param row: Row identifier
+        :param row_id: Row identifier
 
-        :type row: int
+        :type row_id: int
         """
-        self.row = row
+        self.row_id = row_id

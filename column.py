@@ -5,15 +5,15 @@ class Column(object):
 
     column: list = []
 
-    def __init__(self, column: list):
+    def __init__(self, column_id: int):
         """
         Class constructor that represent single sudoku column
 
-        :param column: Column identifier
+        :param column_id: Column identifier
 
-        :type column: int
+        :type column_id: int
         """
-        self.column = column
+        self.column_id = column_id
 
     def exist_in_column(self, number: int):
         """

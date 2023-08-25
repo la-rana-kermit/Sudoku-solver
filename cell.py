@@ -5,9 +5,9 @@ class Cell(object):
     :param candidates: Possible value candidate for cell
     :type candidates: List
     """
-    candidates = []
+    candidates: list = []
 
-    def __init__(self, column, sub_column, row, sub_row, subgrid_column, subgrid_row, value):
+    def __init__(self, column: int, sub_column: int, row: int, sub_row: int, subgrid_column: int, subgrid_row: int, value: int):
         """
         Class constructor that represent single sudoku cell
 
@@ -35,7 +35,7 @@ class Cell(object):
         self.subgrid_row = subgrid_row
         self.value = value
 
-    def add_candidate(self, new_candidate):
+    def add_candidate(self, new_candidate: int):
         """
         Method to add possible new candidate in candidates list
 
@@ -46,7 +46,7 @@ class Cell(object):
             self.candidates.append(new_candidate)
             self.candidates.sort()
 
-    def add_value(self, new_value):
+    def add_value(self, new_value: int):
         """
         Method to update value in cell and consequently empty candidates list
 
@@ -57,7 +57,7 @@ class Cell(object):
             self.value = new_value
             self.candidates.clear()
 
-    def is_candidate(self, possible_candidate):
+    def is_candidate(self, possible_candidate) -> bool:
         """
         Method to check if a possible candidate is in candidates list
 
@@ -69,7 +69,7 @@ class Cell(object):
         """
         return True if possible_candidate in self.candidates else False
 
-    def remove_candidate(self, candidate):
+    def remove_candidate(self, candidate: int):
         """
         Method to remove existing candidate in candidates list
 

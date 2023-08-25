@@ -5,15 +5,15 @@ class Subgrid(object):
 
     subgrid = None
 
-    def __init__(self, subgrid_row, subgrid_column):
+    def __init__(self, subgrid_row_id, subgrid_column_id):
         """
         Class constructor that represent single sudoku subgrid
 
-        :param subgrid_row: Row identifier
-        :param subgrid_column: Column identifier
+        :param subgrid_row_id: Row identifier
+        :param subgrid_column_id: Column identifier
 
-        :type subgrid_row: int
-        :type subgrid_column: int
+        :type subgrid_row_id: int
+        :type subgrid_column_id: int
         """
-        self.subgrid_row = subgrid_row
-        self.subgrid_column = subgrid_column
+        self.subgrid_row_id = subgrid_row_id
+        self.subgrid_column_id = subgrid_column_id
