@@ -14,3 +14,12 @@ class Row(object):
         :type row_id: int
         """
         self.row_id = row_id
+
+    def exist_in_row(self, number: int):
+        """
+        Methods to check if a number exists in row value list
+
+        :param number: Number to check
+        :type number: int
+        """
+        return True if number in self.row else False
